@@ -4,7 +4,7 @@ services:
     env: go
     region: singapore
     rootDir: backend-api
-    buildCommand: go build -o main .
+    buildCommand: go build -o main ./cmd
     startCommand: ./main
     autoDeploy: true
     envVars:
