@@ -14,7 +14,7 @@ var DB *gorm.DB
 func InitDB() {
 	_ = godotenv.Load()
 
-	dsn := os.Getenv("DB_URL")
+	dsn := os.Getenv("DATABASE_URL")
 	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
 
 	if err != nil {

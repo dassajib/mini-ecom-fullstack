@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: mini-ecom-api
+    env: go
+    region: singapore
+    buildCommand: go build -o main .
+    startCommand: ./main
+    autoDeploy: true
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: PORT
+        value: 10000
+      - key: SEED
+        value: "true"
