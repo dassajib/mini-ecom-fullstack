@@ -40,7 +40,7 @@ SEED=true
 
 Install Go dependencies and run the backend server:
 go mod tidy
-go run main.go
+go run cmd/main.go
 backend will run at: http://localhost:8080"
 
 ##Frontend Setup
