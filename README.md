@@ -19,8 +19,8 @@ A minimal full-stack e-commerce web application built with:
 ## 📦 Project Structure
 
 mini-ecom-fullstack/
-├── backend/ # Golang Gin API
-├── frontend/ # React + Vite UI
+├── backend-api/ # Golang Gin API
+├── client-site/ # React + Vite UI
 
 ## 🚀 Setup Instructions
 
@@ -31,7 +31,7 @@ git clone https://github.com/dassajib/mini-ecom-fullstack.git
 cd mini-ecom-fullstack
 
 ## Backend Setup
-cd backend
+cd backend-api
 cp .env
 
 Edit .env to match your local PostgreSQL configuration:
