@@ -35,7 +35,7 @@ cd backend-api
 cp .env
 
 Edit .env to match your local PostgreSQL configuration:
-DB_URL=host=localhost user=sajib password=password dbname=ecom port=5432 sslmode=disable
+DATABASE_URL=host=localhost user=sajib password=password dbname=ecom port=5432 sslmode=disable
 SEED=true
 
 Install Go dependencies and run the backend server:
