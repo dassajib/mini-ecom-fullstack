@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { useCart } from '../context/CartContext'
 import { api } from '../services/api'
+import ProductSkeleton from './ProductSkeleton'
 
 export default function ProductDetailPage() {
     const { id } = useParams()
@@ -14,7 +15,7 @@ export default function ProductDetailPage() {
             .catch((err) => console.error(err))
     }, [id])
 
-    if (!product) return <div className="p-6">Loading...</div>
+    if (!product) return <ProductSkeleton />
 
     return (
         <div className="p-6 max-w-3xl mx-auto">
